@@ -1,0 +1,28 @@
+{
+  "name": "ux-web-base",
+  "version": "0.0.9",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "ux-web-base",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "hongqiang",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxx"
+  },
+  "dependencies": {
+    "@easyest/utils": "^1.0.2"
+  }
+}
