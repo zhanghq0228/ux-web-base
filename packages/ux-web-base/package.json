@@ -22,7 +22,7 @@
     "type": "git",
     "url": "https://github.com/xxx"
   },
-  "dependencies": {
-    "@easyest/utils": "^1.0.2"
+  "peerDependencies":{
+    "element-plus": "^2.3.12"
   }
 }
