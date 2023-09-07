@@ -21,8 +21,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/xxx"
-  },
-  "peerDependencies": {
-    "element-plus": "^2.3.12"
   }
 }
