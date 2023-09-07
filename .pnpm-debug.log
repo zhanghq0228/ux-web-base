@@ -1,0 +1,211 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 5,
+    "total": 5,
+    "workspacePrefix": "/Users/mac/Desktop/dtc-project/ux-web-base"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@ux-web-base/utils",
+      "version": "1.0.2",
+      "main": "./dist/lib/index.js",
+      "module": "./dist/es/index.js",
+      "description": "",
+      "keywords": [],
+      "files": [
+        "dist"
+      ],
+      "author": "",
+      "license": "MIT",
+      "scripts": {
+        "build": "vite build",
+        "release": "release-it"
+      }
+    },
+    "prefix": "/Users/mac/Desktop/dtc-project/ux-web-base/packages/utils"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "create-easyest",
+      "version": "1.0.4",
+      "description": "",
+      "bin": "index.js",
+      "keywords": [
+        "easyest",
+        "vue3组件库"
+      ],
+      "author": "",
+      "type": "module",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/qddidi/easyest"
+      },
+      "dependencies": {
+        "chalk": "^5.2.0",
+        "command-line-args": "^5.2.1",
+        "download-git-repo": "^3.0.2",
+        "ora": "^6.1.2",
+        "prompts": "^2.4.2",
+        "command-line-usage": "^6.1.3"
+      }
+    },
+    "prefix": "/Users/mac/Desktop/dtc-project/ux-web-base/packages/cli"
+  },
+  "3 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@ux-web-base/components",
+      "version": "1.0.0",
+      "description": "",
+      "main": "./index.ts",
+      "scripts": {
+        "build": "vite build",
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "@ux-web-base/utils": "workspace:^1.0.0"
+      },
+      "devDependencies": {
+        "@vitest/coverage-c8": "^0.29.2"
+      }
+    },
+    "prefix": "/Users/mac/Desktop/dtc-project/ux-web-base/packages/components"
+  },
+  "4 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "play",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "dev": "vite"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "@vitejs/plugin-vue": "^4.0.0",
+        "@vitejs/plugin-vue-jsx": "^3.0.1",
+        "vite": "^4.1.1"
+      },
+      "dependencies": {
+        "@ux-web-base/components": "workspace:^1.0.0",
+        "ux-web-base": "workspace:^1.0.5"
+      }
+    },
+    "prefix": "/Users/mac/Desktop/dtc-project/ux-web-base/play"
+  },
+  "5 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "ux-web-base",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "type": "module",
+      "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,vue}": [
+          "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+          "stylelint --fix \"packages/components/src/**/*.{css,less}\""
+        ]
+      },
+      "scripts": {
+        "build": "gulp -f packages/components/script/build/index.ts & pnpm run --filter ./packages/utils build",
+        "publish": "gulp -f packages/components/script/publish/index.ts",
+        "publish:utils": "gulp -f packages/utils/publish/index.ts",
+        "docs:dev": "pnpm run --filter site docs:dev",
+        "docs:build": "pnpm run --filter site docs:build",
+        "docs:deploy": "pnpm run --filter site docs:deploy",
+        "dev": "pnpm run --filter ./play dev",
+        "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+        "lint:style": "stylelint --fix \"packages/components/src/**/*.{css,less}\"",
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "@commitlint/cli": "^17.6.3",
+        "@commitlint/config-conventional": "^17.6.3",
+        "@types/gulp": "^4.0.10",
+        "@types/gulp-autoprefixer": "^0.0.33",
+        "@types/gulp-less": "^0.0.32",
+        "@types/node": "^18.13.0",
+        "@typescript-eslint/eslint-plugin": "^5.54.0",
+        "@typescript-eslint/parser": "^5.54.0",
+        "@vitejs/plugin-legacy": "^4.0.1",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "@vue/runtime-core": "^3.2.47",
+        "@vue/test-utils": "^2.3.1",
+        "c8": "^7.13.0",
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-less": "^5.0.0",
+        "happy-dom": "^8.9.0",
+        "husky": "^8.0.3",
+        "less": "^4.1.3",
+        "postcss-html": "^1.5.0",
+        "prettier": "^2.8.4",
+        "release-it": "^15.6.0",
+        "stylelint": "^15.2.0",
+        "stylelint-config-prettier": "^9.0.5",
+        "stylelint-config-recess-order": "^4.0.0",
+        "stylelint-config-recommended-less": "^1.0.4",
+        "stylelint-config-recommended-vue": "^1.4.0",
+        "stylelint-config-standard": "^30.0.1",
+        "stylelint-prettier": "^3.0.0",
+        "sucrase": "^3.29.0",
+        "typescript": "^4.9.5",
+        "unplugin-vue-define-options": "^1.2.1",
+        "vite": "^3.0.9",
+        "vite-plugin-dts": "^1.4.1",
+        "vitest": "^0.29.2",
+        "vue": "^3.2.36"
+      }
+    },
+    "prefix": "/Users/mac/Desktop/dtc-project/ux-web-base"
+  },
+  "6 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/mac/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/mac/Desktop/dtc-project/ux-web-base/node_modules/.pnpm"
+  },
+  "7 debug pnpm:stage": {
+    "prefix": "/Users/mac/Desktop/dtc-project/ux-web-base",
+    "stage": "resolution_started"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "link:../utils",
+    "wanted": {
+      "dependentId": "packages/components",
+      "name": "@ux-web-base/utils",
+      "rawSpec": "workspace:^1.0.0"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "link:../packages/components",
+    "wanted": {
+      "dependentId": "play",
+      "name": "@ux-web-base/components",
+      "rawSpec": "workspace:^1.0.0"
+    }
+  },
+  "10 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In play: No matching version found for ux-web-base@^1.0.5 inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In play: No matching version found for ux-web-base@^1.0.5 inside the workspace\n    at tryResolveFromWorkspace (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:86100:15)\n    at resolveNpm (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:85991:39)\n    at Object.resolve (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:86223:40)\n    at ctx.requestsQueue.add.priority (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:74577:75)\n    at run (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:74293:90)\n    at PQueue._tryToStartAnother (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:74247:13)\n    at /usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:74306:16\n    at new Promise (<anonymous>)\n    at PQueue.add (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:74288:16)\n    at resolveAndFetch (/usr/local/Cellar/pnpm/6.32.11/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:74577:55)"
+    }
+  }
+}

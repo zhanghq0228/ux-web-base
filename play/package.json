@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "@ux-web-base/components": "workspace:^1.0.0",
-    "ux-web-base": "workspace:^1.0.5"
+    "ux-web-base": "workspace:^1.0.0"
   }
 }
