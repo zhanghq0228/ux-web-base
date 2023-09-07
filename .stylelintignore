@@ -1,0 +1,4 @@
+**.d.ts
+/packages/ux-web-base
+dist
+node_modules
