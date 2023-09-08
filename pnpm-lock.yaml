@@ -123,7 +123,9 @@ importers:
     specifiers: {}
 
   packages/ux-web-base:
-    specifiers: {}
+    specifiers:
+      ux-web-base: ^0.0.17
+      ux-web-base-test: ^0.0.17
 
   play:
     specifiers:

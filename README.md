@@ -33,3 +33,13 @@ pnpm run dev
 ```
 pnpm run docs:dev
 ```
+
+
+```
+yalc pubilsh
+yalc add npmName
+yalc push
+
+
+pnpm i /Users/mac/Desktop/dtc-project/ux-web-base/packages/ux-web-base/node_modules/ux-web-base
+```

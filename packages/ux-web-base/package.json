@@ -23,6 +23,11 @@
     "url": "https://github.com/xxx"
   },
   "peerDependencies": {
-    "element-plus": "^2.2.26"
+    "element-plus": "^2.2.26",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "ux-web-base": "file:.yalc/ux-web-base",
+    "ux-web-base-test": "file:.yalc/ux-web-base-test"
   }
 }

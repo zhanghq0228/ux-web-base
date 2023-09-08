@@ -1,4 +1,5 @@
 /* eslint-disable */
+export *  from './utils/index';
 import * as components from './src/index';
 export * from './src/index';
 import { App, Component } from 'vue';
