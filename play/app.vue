@@ -8,6 +8,8 @@
   <div>
     <ux-button>按钮</ux-button>
     <ux-button type="primary">123</ux-button>
+    <el-button>这是按钮</el-button>
+    <el-button type="danger">这是按钮</el-button>
   </div>
 </template>
 <script lang="ts" setup>

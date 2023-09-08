@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ux-web-base-utils": "workspace:^1.0.0"
+    "ux-web-base-utils": "workspace:^1.0.0",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.29.2"

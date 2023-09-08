@@ -1,7 +1,9 @@
 <template>
-  <button class="ux-button 123" :class="buttonStyle">
+  <button class="ux-button red" :class="buttonStyle">
     <slot />
   </button>
+  <el-button>这是按钮</el-button>
+  <el-button type="danger">这是按钮</el-button>
 </template>
 
 <script lang="ts" setup>
