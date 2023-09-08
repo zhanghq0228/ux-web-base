@@ -111,15 +111,15 @@ importers:
       ux-web-base-utils: workspace:^1.0.0
       vue: ^3.3.4
     dependencies:
-      ux-web-base-utils: link:../utils
+      ux-web-base-utils: link:utils
       vue: 3.3.4
     devDependencies:
       '@vitest/coverage-c8': 0.29.8_vitest@0.29.8
 
-  packages/utils:
+  packages/components/utils:
     specifiers: {}
 
-  packages/utils/dist:
+  packages/components/utils/dist:
     specifiers: {}
 
   packages/ux-web-base:
@@ -136,7 +136,7 @@ importers:
     dependencies:
       ux-web-base: link:..
       ux-web-base-components: link:../packages/components
-      ux-web-base-utils: link:../packages/utils
+      ux-web-base-utils: link:../packages/components/utils
     devDependencies:
       '@vitejs/plugin-vue': 4.3.4_vite@4.4.9+vue@3.3.4
       '@vitejs/plugin-vue-jsx': 3.0.2_vite@4.4.9+vue@3.3.4

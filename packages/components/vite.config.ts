@@ -13,7 +13,7 @@ export default defineConfig({
     //minify: false,
     rollupOptions: {
       //忽略不需要打包的文件
-      external: ['vue', /\.less/, 'ux-web-base-utils'],
+      external: ['vue', /\.less/, 'element-plus'],
       input: ['index.ts'],
       output: [
         {
@@ -25,7 +25,11 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../ux-web-base/es'
+          dir: '../ux-web-base/es',
+          globals: {
+            vue: 'Vue',
+            'element-plus': 'ElementPlus'
+          }
         },
         {
           //打包格式
@@ -36,7 +40,11 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../ux-web-base/lib'
+          dir: '../ux-web-base/lib',
+          globals: {
+            vue: 'Vue',
+            'element-plus': 'ElementPlus'
+          }
         }
       ]
     },
