@@ -1,6 +1,8 @@
 {
-  "name": "ux-web-base-utils",
+  "name": "@ux-web-base/utils",
   "version": "1.0.0",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
   "description": "",
   "keywords": [],
   "author": "",

@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ux-web-base-utils": "workspace:^0.0.1"
+    "ux-web-base-utils": "workspace:^1.0.0"
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.29.2"

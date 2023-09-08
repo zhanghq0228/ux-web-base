@@ -12,4 +12,6 @@
 </template>
 <script lang="ts" setup>
 import { UxButton } from 'ux-web-base-components';
+import { isArray } from 'ux-web-base-utils';
+console.log(`output->isArray([])`, isArray([]));
 </script>
