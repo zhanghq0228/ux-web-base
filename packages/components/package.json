@@ -1,5 +1,5 @@
 {
-  "name": "@ux-web-base/components",
+  "name": "ux-web-base-components",
   "version": "1.0.0",
   "description": "",
   "main": "./index.ts",
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ux-web-base/utils": "workspace:^1.0.0"
+    "ux-web-base-utils": "workspace:^0.0.1"
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.29.2"

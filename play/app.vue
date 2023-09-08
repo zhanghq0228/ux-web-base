@@ -6,10 +6,10 @@
 -->
 <template>
   <div>
-    <ea-button>按钮</ea-button>
-    <Button>123</Button>
+    <ux-button>按钮</ux-button>
+    <ux-button type="primary">123</ux-button>
   </div>
 </template>
 <script lang="ts" setup>
-import { UxButton } from '@ux-web-base/components';
+import { UxButton } from 'ux-web-base-components';
 </script>
