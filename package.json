@@ -70,5 +70,8 @@
   },
   "dependencies": {
     "element-plus": "^2.3.12"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.3.12"
   }
 }

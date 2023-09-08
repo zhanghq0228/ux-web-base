@@ -14,9 +14,6 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "peerDependencies": {
-    "element-plus": "^2.3.12"
-  },
   "author": "hongqiang",
   "license": "MIT",
   "description": "",
@@ -24,5 +21,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/xxx"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.2.26"
   }
 }
